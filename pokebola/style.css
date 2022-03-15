@@ -1,0 +1,158 @@
+/*adicionar fontes externas*/
+@font-face {
+  font-family:'pokemon' ;
+  src: url('fonts/Pokemon Hollow.ttf') format('truetype');
+  font-weight: normal;
+
+  /*Tipos de format
+    opentype(otf)
+    truetype(ttf)
+    embedded-opentype
+    svg
+    truetype-aat(apple advanced typography)
+  */
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(to top, red, blue);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+h1{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+font-family: 'pokemon';
+font-size: 80px;
+color: rgb(204, 204, 33,0.8);
+}
+
+/*Parte inferior*/
+.pokebola-um{
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg,rgb(65, 65, 65,0.8)47%, rgb(255, 255, 255)90%);
+  width: 200px;
+  height: 130px;
+  border-radius: 60px 60px 180px 180px;
+  margin-top: 218px;
+  margin-left: 15px;
+  border: solid 2px black;
+  border-top: transparent;
+  box-shadow: 4px 12px 12px rgb(165, 165, 165);
+}
+
+/*Parte interior da parte inferior*/
+.pokebola-um::after{
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 180px;
+  border-radius: 100%;
+  position: absolute;
+  transform: rotateX(60deg) rotateY(-1deg) skewX(2deg);
+  background: rgba(153, 153, 153, 0.85);
+  margin-top: -62px;
+  margin-left: -6px;
+  border: solid 6px rgb(5, 5, 5);
+  backdrop-filter: blur(-1px);
+}
+
+/*circulo branco superior*/
+.circulo::after{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: solid 6px rgb(12, 12, 12);
+  background: rgb(255, 255, 255);
+  margin-top: 35px;
+  margin-left: -25px;
+  transform: rotateX(-60deg);
+}
+
+/*botão preto dentro do circulo branco*/
+.btn{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: black;
+  margin-top: 55px;
+  margin-left: 12px;
+  transform: rotatex(50deg);
+}
+  
+/*meio circulo inferior*/
+.circulo-dois{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  border-radius: 0px 0px 80px 80px;
+  border: solid 1px rgb(12, 12, 12);
+  background: rgb(49, 49, 49);
+ margin-top: 297px;
+ margin-left: 23px;
+
+}
+/*Parte superior*/
+.pokebola-dois{
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg,rgba(190, 8, 8, 0.8)10%, rgb(146, 146, 146)190%);
+  width: 209px;
+  height: 130px;
+  border-radius: 180px 180px 60px 60px;
+  margin-top: 30px;
+  border: solid 2px black;
+  border-bottom: none;
+  box-shadow: 4px -12px 15px rgb(165, 165, 165);
+}
+
+/*Parte interior da parte superior*/
+.pokebola-dois::after{
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 200px;
+  border-radius: 100%;
+  position: absolute;
+  transform: rotateX(-45deg) rotateY(-1deg);
+  background: rgba(153, 153, 153, 0.85);
+  margin-top: -1px;
+  border: solid 6px black;
+  backdrop-filter: blur(10px);
+}
+
+/*Gif raio*/
+img{
+  position: absolute;
+  transform: rotateX(180deg) ;
+  margin-top: -20px;
+  margin-left: 112px;
+  width: 250px;
+  height: 250px;
+}
+
+
+
+
+
+
+
+
+
